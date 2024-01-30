@@ -12,7 +12,7 @@ def creat_table(con , cur):
     con.commit()
 
 def insert_data(con, cur, data):
-    cur.execute("INSERT INTO weather values(?,?,?,?)", tuple ([v for k,v in data.items()]))
+    cur.execute("INSERT INTO weather values(?,?,?,?)", tuple ([v for k,v in "data.items"()]))
     con.commit()
     
 def proccess_data(data):
